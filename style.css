@@ -1,1 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
+}
+
+.cabecalho-itens {
+    max-width: 1980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-imagem {
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo_site {
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+}
+
+.sociais {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    padding-right: 30px;
+}
+
+
+
+
+.banner1 {
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+}
+
+.escola-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center; 
+  border-radius: 0; 
+}
+.estudante_titulo {
+    padding: 50px;
+    text-align: center;
+}
+
+.estudante-nome {
+    text-align: center;
+}
+
+.estudante-imagem {
+    width: 120px;
+}
+
+.estudante-icone {
+    width: 38px;
+    padding: 4px 8px;
+}
+
+.estudante {
+    background-color: #ffffff; 
+    padding: 24px 0;
+}
+
+.estudante div { 
+    text-align: center;
+    padding: 24px 0;
+}
+
+.estudantes_todos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.escola {
+    background-image: linear-gradient(#2f86bd,#2f86bd);
+    color: rgb(255, 255, 255);
+    padding: 24px 0;
+    text-align: center;
+    display: block; 
+}
+
+.escola-titulo {
+    padding: 50px;
+    text-align: center;
+}
+
+.logo_rodape {
+    height: 80px;
+    padding: 12px 0;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.titulo-video{
+    background-color: #3874FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; 
+      height: 0;
+      overflow: hidden;
+    }
+
+    
+
+
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Botão do menu */
+.dropbtn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #0d5ea6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.dropbtn:hover, 
+.dropdown2:hover .dropbtn {
+  background-color: #0d5ea6;
+  color: #ffffff;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; 
+  background-color: #000000;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid #0d5ea6;
+  border-radius: 4px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #0d5ea6;
+  color: #ffffff;
+}
+
+/*menu
+
+.dropdown2:hover .dropdown-content {
+  display: block;
+}
+
+/* Área principal  */
+.secao-jogo {
+    width: 100%;
+    margin: 30px auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Quadro do jogo */
+.quadro-jogo {
+    display: block;
+    position: relative;
+    width: calc(100% - 32px);
+    max-width: 1400px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    padding: 0;
+    background: #080808;
+    overflow: hidden;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+/* jogo  */
+.quadro-jogo iframe {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: #000000;
+}
+
+/* Tela cheia */
+#jogo-frame:fullscreen {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    border: none;
+    border-radius: 0;
+    background: #000000;
+}
+
+/* Botão de tela cheia */
+.botao-tela-cheia {
+    display: block;
+    margin: 12px auto 30px;
+    padding: 12px 22px;
+    background: #171717;
+    color: #ffffff;
+    border: 1px solid #c49b45;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.botao-tela-cheia:hover {
+    background: #c49b45;
+    color: #111111;
+}
+
+/* Link do jogo */
+.link-jogo {
+    margin-top: 14px;
+}
+
+.link-jogo a {
+    color: #c49b45;
+    text-decoration: none;
+}
+
+.link-jogo a:hover {
+    text-decoration: underline;
+}
